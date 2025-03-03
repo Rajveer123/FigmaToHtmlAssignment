@@ -8,8 +8,12 @@
     --space-xs: 8px;
     --space-2xl: 16px;
     --space-4xl: 20px;
+    --space-6xl: 30px;
     --space-7xl: 34px;
-
+    /** Shadow Variables */
+    --shadow-lg: 0 0 13px 5px #00000029;
+    /** Radius Variables */
+    --radius-xs: 8px;
 }
 
 /** Setting Root Level Properties*/
@@ -93,8 +97,8 @@ ul {
 }
 
 .header__actions {
-    display: flex;
     margin-right: 60px;
+    display: flex;
     align-items: center;
 
     @media only screen and (max-width:1440px) {
@@ -163,7 +167,6 @@ ul {
     display: flex;
 
     @media only screen and (max-width: 1440px) {
-        flex-direction: column;
         padding-right: var(--space-4xl);
         padding-left: var(--space-4xl);
     }
@@ -225,6 +228,19 @@ ul {
     display: none;
 
     group-hover {
-        display: none;
+        display: block;
     }
+}
+
+.menu-container {
+    background-color: var(--white_a700_01);
+    box-shadow: var(--shadow-lg);
+    width: 100%;
+    padding: var(--space-4xl);
+    border-radius: var(--radius-xs);
+}
+
+.menu-group {
+    gap: var(--space-6xl);
+    display: flex;
 }
