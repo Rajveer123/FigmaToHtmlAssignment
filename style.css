@@ -1,6 +1,7 @@
 :root {
     /** Declaring Global Color Variables*/
-    --black_900_01: #000000 --white_a700_01: #ffffff;
+    --black_900_01: #000000;
+    --white_a700_01: #ffffff;
     --gray_500: #919191;
     /** Space Variables*/
     --space-lg: 12px;
@@ -101,6 +102,7 @@ ul {
     display: flex;
     align-items: center;
 
+
     @media only screen and (max-width:1440px) {
         margin-right: 0px;
     }
@@ -114,6 +116,7 @@ ul {
 .header__signup {
     color: var(--black_900_01) !important;
     text-transform: uppercase;
+    width: 100%;
 
     @media only screen and (max-width:1440px) {
         font-size: 13px;
