@@ -211,6 +211,7 @@ ul {
 
 .header__submenu-link {
     text-transform: uppercase;
+    color: white;
 
     @media only screen and (max-width: 1440px) {
         font-size: 13px;
@@ -246,4 +247,13 @@ ul {
 .menu-group {
     gap: var(--space-6xl);
     display: flex;
+}
+
+.header-menu-headingxs {
+    color: white;
+    font-weight: 700;
+}
+
+.header-menu-heading {
+    color: white;
 }
