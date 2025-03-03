@@ -136,6 +136,7 @@ ul {
     height: 40px;
     min-width: 120px;
     border-radius: 20px !important;
+    border-color: transparent;
 
     @media only screen and (max-width:1440px) {
         font-size: 13px;
