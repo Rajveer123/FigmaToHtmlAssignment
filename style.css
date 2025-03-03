@@ -48,7 +48,7 @@ ul {
 }
 
 /** Page CSS */
-.group-278 {
+.body-main-container {
     width: 100%;
     position: relative;
     align-content: center;
@@ -58,7 +58,7 @@ ul {
     }
 }
 
-.group-267 {
+.body-inner-container {
     background-color: var(--white_a700_01);
     width: 100%;
 }
