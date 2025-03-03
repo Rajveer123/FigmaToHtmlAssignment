@@ -254,8 +254,10 @@ ul {
 .header-menu-headingxs {
     color: white;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .header-menu-heading {
     color: white;
+    text-transform: uppercase;
 }
