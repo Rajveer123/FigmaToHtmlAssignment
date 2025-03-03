@@ -1,21 +1,139 @@
 :root {
-    --orangeColor: #DA722C;
-    --darkBlueColor: #023047;
-    --lightColor: #E8F7FB;
-    --blackcolor: #070917;
-    --lightBlueColor: #6F7DFB;
+    /** Declaring Global Color Variables*/
+    --black_900_01: #000000 --white_a700_01: #ffffff;
+    --gray_500: #919191;
+    /** Space Variables*/
+
+    --space-2xl: 16px;
+    --space-4xl: 20px;
+    --space-7xl: 34px;
+
 }
 
+/** Setting Root Level Properties*/
 *,
 *::after,
 *::before {
     box-sizing: border-box;
-    list-style: none;
 }
 
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans' sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-inline: unset !important;
     list-style: none;
-    font-family: 'Poppins' sans-serif;
+}
+
+/** Page CSS */
+.group-278 {
+    width: 100%;
+    position: relative;
+    align-content: center;
+
+    @media only screen and (max-width: 1440px) {
+        height: auto;
+    }
+}
+
+.group-267 {
+    background-color: var(--white_a700_01);
+    width: 100%;
+}
+
+.header {
+    z-index: 2;
+    position: relative;
+}
+
+.header__top-row {
+    background-color: var(--white_a700_01);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-4xl);
+    padding: 6px 98px;
+
+    @media only screen and (max-width: 1440px) {
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    /** Handling Menu UI for Mobile Devices */
+    @media only screen and (max-width: 550px) {
+        flex-direction: column;
+        padding-right: var(--space-2xl);
+        padding-left: var(--space-2xl);
+    }
+}
+
+.header__logo {
+    height: 68px;
+    margin-top: 18px;
+    align-self: flex-end;
+    width: 118px;
+    object-fit: contain;
+}
+
+.header__actions {
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+
+    @media only screen and (max-width:1440px) {
+        margin-right: 0px;
+    }
+
+    /** Handling Menu UI for Mobile Devices */
+    @media only screen and (max-width:550px) {
+        flex-direction: column;
+    }
+}
+
+.header__signup {
+    color: var(--black_900_01) !important;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:1440px) {
+        font-size: 13px;
+    }
+}
+
+.header__login-button {
+    color: var(--white_a700_01) !important;
+    margin-left: 10px;
+    padding-left: var(--space-7xl);
+    padding-right: var(--space-7xl);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--gray_500) !important;
+    height: 40px;
+    min-width: 120px;
+    border-radius: 20px !important;
+
+    @media only screen and (max-width:1440px) {
+        font-size: 13px;
+    }
+
+    @media only screen and (max-width:550px) {
+        padding-left: var(--space-2xl);
+        padding-right: var(--space-2xl);
+        margin-left: 0px;
+    }
 }
