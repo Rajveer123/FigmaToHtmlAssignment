@@ -371,6 +371,9 @@ ul {
     height: 50px;
     min-width: 212px;
     border-radius: 24px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media only screen and (max-width: 1440px) {
         font-size: 13px;
