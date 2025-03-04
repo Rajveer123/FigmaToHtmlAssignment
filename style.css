@@ -374,6 +374,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-color: transparent;
 
     @media only screen and (max-width: 1440px) {
         font-size: 13px;
@@ -420,20 +421,17 @@ ul {
 
 .slider-controls__previous {
     height: 60px;
-    padding-left: var(--space-3xl);
-    padding-right: var(--space-3xl);
+    border-color: transparent;
     transform: rotate(-180deg);
-    background-color: var(--white_a700_01) !important;
+    background-color: black;
     width: 60px;
     border-radius: 30px !important;
 }
 
 .slider-controls__next {
     height: 60px;
-    padding-left: var(--space-3xl);
-    padding-right: var(--space-3xl);
-    transform: rotate(-180deg);
-    background-color: var(--white_a700_01) !important;
+    border-color: transparent;
+    background-color: black;
     width: 60px;
     border-radius: 30px !important;
 }
