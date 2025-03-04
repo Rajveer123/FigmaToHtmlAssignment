@@ -47,7 +47,7 @@ ul {
     list-style: none;
 }
 
-/** Page CSS */
+/** header section CSS starts here */
 .body-main-container {
     width: 100%;
     position: relative;
@@ -261,3 +261,59 @@ ul {
     color: white;
     text-transform: uppercase;
 }
+
+/** header section CSS endss*/
+
+/** hero section CSS starts*/
+.frame-1000004694 {
+    margin-top: -50px;
+    overflow: scroll;
+    position: relative;
+}
+
+.component-11 {
+    overflow-x: scroll;
+    width: 1600px;
+}
+
+.group-1000004977 {
+    width: 1600px;
+    background-color: linear-gradient(180deg, #252525, #000000);
+}
+
+.group-8 {
+    height: 748px;
+    background-image: url("/images/bgImage.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 54px;
+
+    @media only screen and (max-width: 1440px) {
+        height: auto;
+    }
+
+    /** Mobile specific CSS*/
+    @media only screen and (max-width: 550px) {
+        padding: var(--space-2xl);
+    }
+}
+
+.section-3 {
+    margin-top: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__content-3 {
+    height: 488px;
+    align-self: stretch;
+    position: relative;
+    align-content: center;
+
+    @media only screen and (max-width: 1440px) {
+        height: auto;
+    }
+}
+
+/** hero section CSS endss*/
