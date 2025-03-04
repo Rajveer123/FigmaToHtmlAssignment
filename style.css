@@ -281,7 +281,7 @@ ul {
 
 .group-1000004977 {
     width: 1600px;
-    background-color: linear-gradient(180deg, #252525, #000000);
+    background: linear-gradient(180deg, #252525, #000000);
 }
 
 .group-8 {
@@ -351,6 +351,7 @@ ul {
 
 .product-registration__title {
     letter-spacing: 2.16px;
+    color: var(--white_a700_01) !important;
 
     @media only screen and (max-width: 1440px) {
         font-size: 48px;
