@@ -376,4 +376,104 @@ ul {
     }
 }
 
+.right-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 30px;
+}
+
+.arrow_left {
+    width: 28px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.product-registration__image {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 1440px) {
+        height: auto;
+    }
+}
+
+.slider-controls {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 29%;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: var(--space-4xl);
+}
+
+
+.slider-controls__previous {
+    height: 60px;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    transform: rotate(-180deg);
+    background-color: var(--white_a700_01) !important;
+    width: 60px;
+    border-radius: 30px !important;
+}
+
+.slider-controls__next {
+    height: 60px;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    transform: rotate(-180deg);
+    background-color: var(--white_a700_01) !important;
+    width: 60px;
+    border-radius: 30px !important;
+}
+
+.pager-indicator-wrapper {
+    margin-top: -4px;
+    padding-left: 562px;
+    padding-right: 562px;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 1440px) {
+        padding-left: var(--space-4xl);
+        padding-right: var(--space-4xl);
+    }
+
+}
+
+.pager-indicator-wrapper__indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+    &>.swiper-paggination-buttet {
+        background-color: var(--white_a700_01);
+        width: 30px;
+        height: 2px;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 16.75px;
+    }
+
+    &>.swiper-paggination-buttet-active {
+        background-color: var(--gray_500);
+        width: 30px;
+        height: 4px;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 16.75px;
+    }
+}
+
 /** hero section CSS endss*/
