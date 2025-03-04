@@ -3,12 +3,15 @@
     --black_900_01: #000000;
     --white_a700_01: #ffffff;
     --gray_500: #919191;
+    --deep_orange_a700_01: #e31615;
     /** Space Variables*/
     --space-lg: 12px;
     --space-xl: 14px;
     --space-xs: 8px;
     --space-2xl: 16px;
+    --space-3xl: 18px;
     --space-4xl: 20px;
+    --space-5xl: 22px;
     --space-6xl: 30px;
     --space-7xl: 34px;
     /** Shadow Variables */
@@ -313,6 +316,63 @@ ul {
 
     @media only screen and (max-width: 1440px) {
         height: auto;
+    }
+}
+
+.slider {
+    max-width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.slider__item {
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex !important;
+    justify-content: center;
+
+    @media only screen and (max-width: 1440px) {
+        padding-left: var(--space-4xl);
+        padding-right: var(--space-4xl);
+    }
+}
+
+.product-registration {
+    gap: var(--space-2xl);
+    display: flex;
+    width: 88%;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: 1440px) {
+        width: 100%;
+    }
+}
+
+.product-registration__title {
+    letter-spacing: 2.16px;
+
+    @media only screen and (max-width: 1440px) {
+        font-size: 48px;
+    }
+}
+
+.product-registration__button {
+    color: var(--white_a700_01) !important;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    gap: var(--space-5xl);
+    background-color: var(--deep_orange_a700_01) !important;
+    box-shadow: 0 3px 6px 0 #00000028 !important;
+    height: 50px;
+    min-width: 212px;
+    border-radius: 24px !important;
+
+    @media only screen and (max-width: 1440px) {
+        font-size: 13px;
     }
 }
 
