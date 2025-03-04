@@ -328,7 +328,7 @@ ul {
     align-items: center;
 }
 
-.slider__item {
+.slider__item-swiper-slide {
     padding-left: 56px;
     padding-right: 56px;
     display: flex !important;
