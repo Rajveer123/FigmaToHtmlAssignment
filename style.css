@@ -27,6 +27,7 @@
     box-sizing: border-box;
 }
 
+/** Setting HTML tag Level Properties*/
 body {
     margin: 0;
     padding: 0;
